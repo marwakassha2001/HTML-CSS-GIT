@@ -37,7 +37,27 @@
         <div class="checkout">
           <h2 class="checkout__title">Checkout</h2>
           <form method="GET" id="checkout-form" class="checkout__form">
-            <!-- Add the form fields here -->
+            <label for="addressLine1">Address Line 1:</label>
+            <input type="text" id="addressLine1" name="addressLine1" required /><br />
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" required /><br />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required /><br />
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" value="United Kingdom" readonly /><br />
+
+            <label for="deliveryOption">Delivery Option:</label>
+            <input
+              type="radio"
+              id="deliveryOption"
+              name="deliveryOption"
+              value="standard"
+              checked
+              disabled
+            /><br />
             <fieldset>
               <legend>Billing Address</legend>
               <p>
