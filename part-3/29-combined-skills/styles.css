@@ -7,7 +7,7 @@
 .main-nav__list {
   display: flex;
   list-style: none;
-  padding: 0;
+  justify-content: space-between;
 }
 
 .main-nav__list-item {
@@ -43,20 +43,32 @@
   }
 }
 @media (min-width: 768px) {
-  .main-nav__list {
+  .views {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 20;
     padding: 0;
     list-style: none;
     justify-content: space-between;
   }
+  .views {
+    display: flex;
+  }
 
-  .main-nav__list-item {
+  .view-list__item {
     margin-right: 20px;
+    justify-content: space-between;
   }
 
   .views__all {
     margin-left: auto;
   }
+}
+.main-article {
+  max-width: 50em;
+  line-height: 1.6;
+}
+.site-content {
+  display: flex;
+  justify-content: center;
 }
